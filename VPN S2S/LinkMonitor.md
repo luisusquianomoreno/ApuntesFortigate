@@ -20,9 +20,9 @@ hasta que la línea principal se restablezca. Es por eso que usamos las distanci
 
 Más comandos útiles
 
-`show system link-monitor`
 
 `config vpn ipsec phase1-interface`
 `edit "vpn_s2s_backup"`
+`set dpd on-idle`
 `set monitor "vpn_s2s_activa"`
 `end`
