@@ -20,7 +20,7 @@ hasta que la línea principal se restablezca. Es por eso que usamos las distanci
 
 Más comandos útiles
 
-## Opción1 (IPSEC Interface Monitoring 
+## Opción1 (IPSEC Interface Monitoring)
 
 `config vpn ipsec phase1-interface`
 `edit "vpn_s2s_backup"`
