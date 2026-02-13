@@ -26,3 +26,46 @@ Más comandos útiles
 `set dpd on-idle`
 `set monitor "vpn_s2s_activa"`
 `end`
+
+## Opción 2
+
+Opcion B
+Configuramos las 2 VPN, en esta entrada únicamente mostramos la configuración de la fase 1, también sería necesario configurar las fase II.
+
+config vpn ipsec phase1-interface
+  edit "vpn_main”
+    set interface "port1"
+    set dpd on-idle
+    set remote-gw X.X.X.X
+  next
+  edit "vpn_backup"
+    set interface "port2"
+    set dpd on-idle
+    set remote-gw Y.Y.Y.Y
+  next
+end
+
+Configuramos las rutas, la distancia debe ser distinta, ya que necesitamos tener un túnel levantado y el otro no.
+
+edit X
+  set dst 10.0.2.0 255.255.255.0 (IP Destino)
+  set distance 10
+  set device "vpn_main"
+next
+edit Y
+  set dst 10.0.2.0 255.255.255.0 (IP Destino)
+  set distance 20
+  set device "vpn_backup"
+next
+
+También es necesario establecer los link-health-monitor, nos ayudaran a detectar si el primer túnel tiene un problema, actuara, limpiando la entrada en la tabla de rutas y permitiendo levantar el túnel de backup.
+
+config system link-monitor
+  edit main_vpn
+    set srcintf vpn_main
+    set server <server_ip>
+    set gateway-ip <gateway_ip>
+    set protocol [ping | tcp-echo | udp-echo | twamp | http]
+    set update-static-route enable
+  next
+end
