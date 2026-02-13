@@ -22,7 +22,7 @@ Más comandos útiles
 
 `show system link-monitor`
 
-`config vpn ipsec phase1-interface
-edit "vpn_s2s_backup"
-set monitor "vpn_s2s_activa"
-end`
+`config vpn ipsec phase1-interface`
+`edit "vpn_s2s_backup"`
+`set monitor "vpn_s2s_activa"`
+`end`
