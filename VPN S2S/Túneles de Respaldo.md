@@ -75,8 +75,9 @@ end
 
 ## Capturas de configuración real 
 
+<img width="450" height="300" alt="image" src="https://github.com/user-attachments/assets/b3de0d77-9b9a-4e33-9a73-4592e00e20a4" />
+<img width="541" height="314" alt="image" src="https://github.com/user-attachments/assets/ffaa0674-9adf-4439-b3f5-5831b09df391" />
 
-<img width="541" height="314" alt="image" src="https://github.com/user-attachments/assets/9571c3bd-b815-4a20-a7b7-796f85b01566" />
 
-<img width="454" height="309" alt="image" src="https://github.com/user-attachments/assets/8fe1c537-c6e1-47bb-a9de-89f32118d78c" />
+
 
