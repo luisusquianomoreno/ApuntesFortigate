@@ -70,3 +70,10 @@ config system link-monitor
     set update-static-route enable
   next
 end
+
+
+
+## Capturas de configuración real 
+
+
+<img width="541" height="314" alt="image" src="https://github.com/user-attachments/assets/9571c3bd-b815-4a20-a7b7-796f85b01566" />
