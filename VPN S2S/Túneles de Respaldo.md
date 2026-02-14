@@ -80,7 +80,7 @@ end
 
 
 - Es mejor usar "link health monitor" que "set monitor" ya que el "set monitor" no detecta si la línea está caída.
-Es decir, la línea puede estar no operativa pero puede estar UP. En cambio el "link health monitor" como manda
+Es decir, la línea puede estar no operativa pero la interfaz del túnel principal puede estar UP. En cambio el "link health monitor" como manda
 paquetes de comprobación hacia el otro extremo, este si detecta un fallo en la línea.
 
 
